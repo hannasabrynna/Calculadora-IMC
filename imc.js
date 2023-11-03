@@ -1,4 +1,4 @@
-const calcular = document.getElementById('calcular')
+const calcular = document.getElementById('calcular');
 
 function imc() {
     const nome = document.getElementById('nome').value;
@@ -6,24 +6,24 @@ function imc() {
     const peso = document.getElementById('peso').value;
     const resultado = document.getElementById('resultado');
 
-    // testa se os campos estão vazios
+    // testa se os campos estão vazios.
     if (nome !== '' && altura !== '' && peso !== '') {
-        const valorIMC = (peso / (altura * altura)).toFixed(2);   //toFixed determina a quantidade de casas decimais (numeros apois a virgula)
+        const valorIMC = (peso / (altura * altura)).toFixed(2);   //toFixed determina a quantidade de casas decimais.
 
         let classificacao = '';
 
         if (valorIMC < 18.5) {
-            classificacao = 'abaixo do peso';
+            classificacao = 'abaixo do peso.';
         } else if (valorIMC < 25) {
-            classificacao = 'com o peso ideal';
+            classificacao = 'com o peso ideal.';
         } else if (valorIMC < 30) {
-            classificacao = 'um pouco a cima do peso';
+            classificacao = 'um pouco a cima do peso.';
         } else if (valorIMC < 35) {
-            classificacao = 'com obesidade grau I';
+            classificacao = 'com obesidade grau I.';
         } else if (valorIMC < 40) {
-            classificacao = 'com obesidade garu II';
+            classificacao = 'com obesidade garu II.';
         } else {
-            classificacao = 'com obesidade grau III'
+            classificacao = 'com obesidade grau III.'
 
         }
 
